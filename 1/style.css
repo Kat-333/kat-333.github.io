@@ -133,7 +133,7 @@ margin: 5% auto 1%;
 
     margin: 3% auto;
     
-    transform: opacity 0.1s; linear;
+    transform: opacity 0.1s linear;
 }
 
 .nav_link:hover {
@@ -337,7 +337,7 @@ margin: 5% auto 1%;
     width: 100%;
     height: auto;
     background-color: #95e1d3;
-    margin 0;
+    margin: 0;
 }
 
 .bar {
@@ -875,7 +875,7 @@ margin: 5% auto 1%;
 
 .image_pazzle_text b {
     color: #ffffff;
-    font-family: Montserrat, , sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-weight: 510;
     text-transform: uppercase;
@@ -1054,7 +1054,7 @@ margin: 5% auto 1%;
 }
 
 .blog_text {
-    width: 100%
+    width: 100%;
     color: #999999;
     font-family: "Roboto", sans-serif;
     font-size: 15px;

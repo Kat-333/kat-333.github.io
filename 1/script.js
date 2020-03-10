@@ -40,20 +40,20 @@ function accShow2() {
 
 function accShow3() {
 	
-		if (acc3.style.display != "block") {
-			acc3.style.display = "block";
-			arrow3.style.transform = "rotate(180deg)";
-			acc1.style.display = "none";
-			arrow1.style.transform = "rotate(0deg)";
-			acc2.style.display = "none";
-			arrow2.style.transform = "rotate(0deg)";
-			/*console.log (acc3.style.display, arrow3.style.transform)*/
-		}
-		else {
-			acc3.style.display = "none";
-			arrow3.style.transform = "rotate(0deg)";
-		}
+	if (acc3.style.display != "block") {
+		acc3.style.display = "block";
+		arrow3.style.transform = "rotate(180deg)";
+		acc1.style.display = "none";
+		arrow1.style.transform = "rotate(0deg)";
+		acc2.style.display = "none";
+		arrow2.style.transform = "rotate(0deg)";
+		/*console.log (acc3.style.display, arrow3.style.transform)*/
 	}
+	else {
+		acc3.style.display = "none";
+		arrow3.style.transform = "rotate(0deg)";
+	}
+}
 
 
 /* слайдер без анимации, но с зацикливанием - начало

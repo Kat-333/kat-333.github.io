@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400,400i&display=swap" rel="stylesheet">
     <title>Mogo</title>
 </head>
-<body>
+<body onload="accShow1()">
 
 <header class="header">
     <div class="container">
         <div class="header_inner">
             <div class="header_logo">MoGo</div>
-            
             <nav class="nav">
                 <a class="nav_link" href="#about">About</a>
                 <a class="nav_link" href="#service">Service</a>
@@ -20,7 +20,41 @@
                 <a class="nav_link" href="#blog">Blog</a>
                 <a class="nav_link" href="#contact">Contact</a>
             </nav>
+
+        <!-- Hamburger menu - simple -->
+        <!-- <div class="hamburger_menu">
+            <input type="checkbox" id="menu_toggle"/>
+            <label for="menu_toggle" class="menu_btn">
+                <span></span>
+            </label>
+
+            <ul class="menu_box">
+                <li><a class="menu_item" href="#about">About</a></li>
+                <li><a class="menu_item" href="#service">Service</a></li>
+                <li><a class="menu_item" href="#work">Work</a></li>
+                <li><a class="menu_item" href="#blog">Blog</a</li>
+                <li><a class="menu_item" href="#contact">Contact</a></li>
+            </ul>
+        </div> -->
+        
+        <!-- Hamburger menu - with animation -->
+            <div class="hamburger_menu">
+                <input type="checkbox" id="menu_toggle"/>
+                <label for="menu_toggle" class="menu_btn">
+                    <span></span>
+                </label>
+
+                <nav class="menu_box">
+                    <a class="menu_item" href="#about">About</a>
+                    <a class="menu_item" href="#service">Service</a>
+                    <a class="menu_item" href="#work">Work</a>
+                    <a class="menu_item" href="#blog">Blog</a>
+                    <a class="menu_item" href="#contact">Contact</a>
+                </nav>
+            </div>
+
         </div>
+
     </div>
 </header>
     
@@ -30,13 +64,13 @@
             <h2 class="intro_suptitle">Creative Template</h2>
             <h1 class="intro_title">Welcome<br/>to MoGo</h1>
             
-            <a class="btn" href="">Learn More</a>
+            <a class="btn" href="#about">Learn More</a>
         </div>     
     </div>
 
 
 <div class="header_slider">
-    <div class= "containe">
+    <div class= "container">
         <div class="slider_inner">
             <div class="slider_item active">
             <span class="slider_num">01</span>
@@ -72,25 +106,25 @@
         <div class="imgs1">
 
             <div class="imgs1_block">
-                <img class="img1" src="assets/images/table0.jpg"/>
+                <img class="img1" src="images/table0.jpg"/>
                 <div class="img1_text"> 
-                    <img src="assets/images/USERS.png"/>
+                    <img src="images/USERS.png"/>
+                    <span>Super team</span>
+                </div>
+            </div>
+
+            <div class="imgs1_block">
+                <img class="img1"src="images/table.jpg"/>
+                <div class="img1_text"> 
+                    <img src="images/USERS.png"/>
                     Super team
                 </div>
             </div>
 
             <div class="imgs1_block">
-                <img class="img1"src="assets/images/table.jpg"/>
+                <img class="img1"src="images/table2.jpg"/>
                 <div class="img1_text"> 
-                    <img src="assets/images/USERS.png"/>
-                    Super team
-                </div>
-            </div>
-
-            <div class="imgs1_block">
-                <img class="img1"src="assets/images/table2.jpg"/>
-                <div class="img1_text"> 
-                    <img src="assets/images/USERS.png"/>
+                    <img src="images/USERS.png"/>
                     Super team
                 </div>
             </div>
@@ -114,7 +148,7 @@
             <span class="bar_num">15</span>
             <span class="bar_string">award winner</span>
         </div>
-        <div class="bar_section">
+        <div class="bar_section border_left_after">
             <span class="bar_num">99</span>
             <span class="bar_string">cup of coffee</span>
         </div>
@@ -136,7 +170,7 @@
     <div class="amazing_services_table">
 
         <div class="services_block line">
-            <img class="services_icon" src="assets/images/ALARM.png"/>
+            <img class="services_icon" src="images/ALARM.png"/>
                 <div>
                     <p class="services_header"><b>Photography</b></p>
                     <p class="services_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -145,7 +179,7 @@
         </div>
 
         <div class="services_block line">
-            <img class="services_icon" src="assets/images/LINE_GRAPH.png"/>
+            <img class="services_icon" src="images/LINE_GRAPH.png"/>
                 <div>
                     <p class="services_header"><b>Web design</b></p>
                     <p class="services_text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -154,7 +188,7 @@
         </div>
 
         <div class="services_block line">
-            <img class="services_icon" src="assets/images/COMPUTER_OK.png"/>
+            <img class="services_icon" src="images/COMPUTER_OK.png"/>
                 <div>
                     <p class="services_header"><b>Creativity</b></p>
                     <p class="services_text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -163,7 +197,7 @@
         </div>
 
         <div class="services_block line_after">
-            <img class="services_icon" src="assets/images/BOOK_2.png"/>
+            <img class="services_icon" src="images/BOOK_2.png"/>
                 <div>
                     <p class="services_header"><b>seo</b></p>
                     <p class="services_text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
@@ -171,8 +205,8 @@
         
         </div>
 
-        <div class="services_block">
-            <img class="services_icon" src="assets/images/HOME.png"/>
+        <div class="services_block line_after_after">
+            <img class="services_icon" src="images/HOME.png"/>
                 <div>
                     <p class="services_header"><b>Css/Html</b></p>
                     <p class="services_text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
@@ -181,7 +215,7 @@
         </div>
 
         <div class="services_block">
-            <img class="services_icon" src="assets/images/IMAGE.png"/>
+            <img class="services_icon" src="images/IMAGE.png"/>
                 <div>
                     <p class="services_header"><b>digital</b></p>
                     <p class="services_text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -200,10 +234,10 @@
                 <h2 class="section_title unique_design">Unique design</h2>
             </div>
     </div>
-            <div class="devices">
-                <img class="img_tablet" src="assets/images/display_bg_768x1024.png"/>
-                <img class="img_phone" src="assets/images/White.png"/>
-            </div>
+    <div class="devices">
+        <img class="img_tablet" src="images/display_bg_768x1024.png"/>
+        <img class="img_phone" src="images/White.png"/>
+    </div>
 </section>
     
 <section class="section what_we_do">
@@ -215,13 +249,13 @@
         </div>
         
         <div class="what_main">
-            <img class="what_main_photo" src="assets/images/Photo_man.jpg"/>
+            <img class="what_main_photo" src="images/Photo_man.jpg"/>
             <div class="what_main_blocks">
                 <div class="blocks">
                     <div class="what_main_block1" onclick="accShow1()">
-                        <img class="w_block1_icon" src="assets/images/PICTURE.png"/>
+                        <img class="w_block1_icon" src="images/PICTURE.png"/>
                         <p class="w_block1_text"><b>Photography</b></p>
-                        <img id="arrow1" class="w_block1_arrow" src="assets/images/ARROW_DOWN.png"/>
+                        <img id="arrow1" class="w_block1_arrow" src="images/ARROW_DOWN.png"/>
                     </div>
                     <div id="1" class="what_main_block2">
                         <p class="w_block2_text"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i></p>
@@ -230,9 +264,9 @@
 
                 <div class="blocks">
                     <div class="what_main_block1" onclick="accShow2()">
-                        <img class="w_block1_icon" src="assets/images/EQUALIZER.png"/>
+                        <img class="w_block1_icon" src="images/EQUALIZER.png"/>
                         <p class="w_block1_text"><b>creativity</b></p>
-                        <img id="arrow2" class="w_block1_arrow" src="assets/images/ARROW_DOWN.png"/>
+                        <img id="arrow2" class="w_block1_arrow" src="images/ARROW_DOWN.png"/>
                     </div>
                     <div id="2" class="what_main_block2">
                         <p class="w_block2_text"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i></p>
@@ -241,9 +275,9 @@
 
                 <div class="blocks">
                     <div class="what_main_block1" onclick="accShow3()">
-                        <img class="w_block1_icon" src="assets/images/BULLSEYE.png"/>
+                        <img class="w_block1_icon" src="images/BULLSEYE.png"/>
                         <p class="w_block1_text"><b>web design</b></p>
-                        <img id="arrow3" class="w_block1_arrow" src="assets/images/ARROW_DOWN.png"/>
+                        <img id="arrow3" class="w_block1_arrow" src="images/ARROW_DOWN.png"/>
                     </div>
                     <div id="3" class="what_main_block2">
                         <p class="w_block2_text"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i></p>
@@ -257,7 +291,7 @@
 <section class="reviews">
     <div class="container">
         <div class="reviews_main">
-            <img id="arrow_prev" src="assets/images/ARROW_DOWN.png" onclick="minusSlide(1)"/>
+            <img id="arrow_prev" src="images/ARROW_DOWN.png" onclick="minusSlide(1)"/>
 
             <div class="slider">
                 <div id="slides1" class="slides">
@@ -265,7 +299,7 @@
                     <div class="slide_wrapper1">
                         <div class="slide">
                             <div class="review_photo">
-                                <img src="assets/images/SPEECH_4.png"/>
+                                <img src="images/SPEECH_4.png"/>
                             </div>
                             <div class="review_text">
                                 <p class="quote"> <q>111 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</q></p>
@@ -277,7 +311,7 @@
                     <div class="slide_wrapper1">
                         <div class="slide">
                             <div class="review_photo">
-                                <img src="assets/images/SPEECH_4.png"/>
+                                <img src="images/SPEECH_4.png"/>
                             </div>
                             <div class="review_text">
                                 <p class="quote"> <q>222 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</q></p>
@@ -290,7 +324,7 @@
                     <div class="slide_wrapper1">
                         <div class="slide">
                             <div class="review_photo">
-                                <img src="assets/images/SPEECH_4.png"/>
+                                <img src="images/SPEECH_4.png"/>
                             </div>
                             <div class="review_text">
                                 <p class="quote"> <q>333 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</q></p>
@@ -302,7 +336,7 @@
                 </div>
             </div>
 
-            <img id="arrow_next" src="assets/images/ARROW_DOWN.png" onclick="plusSlide(1)"/>
+            <img id="arrow_next" src="images/ARROW_DOWN.png" onclick="plusSlide(1)"/>
         </div>
     </div>
 </section> 
@@ -318,30 +352,30 @@
         <div class="imgs2">
             <div class="captions_photo">
                 <div class="imgs2_block">
-                    <img class="img2" src="assets/images/Team1.jpg"/>
+                    <img class="img2" src="images/Team1.jpg"/>
                     <div class="img2_text"> 
                         <div class="img2_icon_bg">
-                            <img src="assets/images/Slice_1.jpg"/>
+                            <img src="images/Slice_1.jpg"/>
                             <a class="img2_icon" href="https://www.facebook.com" target="_blank">
-                                <img  src="assets/images/facebook.png"/>
+                                <img  src="images/facebook.png"/>
                             </a> 
                         </div>  
                         <div class="img2_icon_bg">
-                            <img src="assets/images/Slice_2.jpg"/>
+                            <img src="images/Slice_2.jpg"/>
                             <a class="img2_icon" href="https://twitter.com" target="_blank">
-                                <img  src="assets/images/twitter.png"/>
+                                <img  src="images/twitter.png"/>
                             </a>
                         </div>
                         <div class="img2_icon_bg">
-                            <img src="assets/images/Slice_3.png"/>
+                            <img src="images/Slice_3.png"/>
                             <a class="img2_icon" href="https://www.pinterest.ru" target="_blank">
-                                <img src="assets/images/pinterest.png"/>
+                                <img src="images/pinterest.png"/>
                             </a>
                         </div>
                         <div class="img2_icon_bg">
-                            <img src="assets/images/Slice_4.jpg"/>
+                            <img src="images/Slice_4.jpg"/>
                             <a class="img2_icon" href="https://www.instagram.com" target="_blank">
-                                <img src="assets/images/instagram.png"/>
+                                <img src="images/instagram.png"/>
                             </a>
                         </div>
                     </div>
@@ -354,30 +388,30 @@
 
             <div class="captions_photo">
                 <div class="imgs2_block">
-                    <img class="img2"src="assets/images/Team2.jpg"/>
+                    <img class="img2"src="images/Team2.jpg"/>
                     <div class="img2_text"> 
                         <div class="img2_icon_bg">
-                            <img src="assets/images/Slice_1.jpg"/>
+                            <img src="images/Slice_1.jpg"/>
                             <a class="img2_icon" href="https://www.facebook.com" target="_blank">
-                                <img  src="assets/images/facebook.png"/>
+                                <img  src="images/facebook.png"/>
                             </a> 
                         </div>  
                         <div class="img2_icon_bg">
-                            <img src="assets/images/Slice_2.jpg"/>
+                            <img src="images/Slice_2.jpg"/>
                             <a class="img2_icon" href="https://twitter.com" target="_blank">
-                                <img  src="assets/images/twitter.png"/>
+                                <img  src="images/twitter.png"/>
                             </a>
                         </div>
                         <div class="img2_icon_bg">
-                            <img src="assets/images/Slice_3.png"/>
+                            <img src="images/Slice_3.png"/>
                             <a class="img2_icon" href="https://www.pinterest.ru" target="_blank">
-                                <img src="assets/images/pinterest.png"/>
+                                <img src="images/pinterest.png"/>
                             </a>
                         </div>
                         <div class="img2_icon_bg">
-                            <img src="assets/images/Slice_4.jpg"/>
+                            <img src="images/Slice_4.jpg"/>
                             <a class="img2_icon" href="https://www.instagram.com" target="_blank">
-                                <img src="assets/images/instagram.png"/>
+                                <img src="images/instagram.png"/>
                             </a>
                         </div>
                     </div>
@@ -390,30 +424,30 @@
 
             <div class="captions_photo">
                 <div class="imgs2_block">
-                    <img class="img2"src="assets/images/Team3.jpg"/>
+                    <img class="img2"src="images/Team3.jpg"/>
                     <div class="img2_text"> 
                         <div class="img2_icon_bg">
-                            <img src="assets/images/Slice_1.jpg"/>
+                            <img src="images/Slice_1.jpg"/>
                             <a class="img2_icon" href="https://www.facebook.com" target="_blank">
-                                <img  src="assets/images/facebook.png"/>
+                                <img  src="images/facebook.png"/>
                             </a> 
                         </div>  
                         <div class="img2_icon_bg">
-                            <img src="assets/images/Slice_2.jpg"/>
+                            <img src="images/Slice_2.jpg"/>
                             <a class="img2_icon" href="https://twitter.com" target="_blank">
-                                <img  src="assets/images/twitter.png"/>
+                                <img  src="images/twitter.png"/>
                             </a>
                         </div>
                         <div class="img2_icon_bg">
-                            <img src="assets/images/Slice_3.png"/>
+                            <img src="images/Slice_3.png"/>
                             <a class="img2_icon" href="https://www.pinterest.ru" target="_blank">
-                                <img src="assets/images/pinterest.png"/>
+                                <img src="images/pinterest.png"/>
                             </a>
                         </div>
                         <div class="img2_icon_bg">
-                            <img src="assets/images/Slice_4.jpg"/>
+                            <img src="images/Slice_4.jpg"/>
                             <a class="img2_icon" href="https://www.instagram.com" target="_blank">
-                                <img src="assets/images/instagram.png"/>
+                                <img src="images/instagram.png"/>
                             </a>
                         </div>
                     </div>
@@ -430,12 +464,12 @@
     <div class="logos_bar">
         <div class="container">
             <div class="logos">
-                <img class="logos_img" src="assets/images/Logos1.jpg"/>
-                <img class="logos_img" src="assets/images/Logos2.jpg"/>
-                <img class="logos_img" src="assets/images/Logos3.jpg"/>
-                <img class="logos_img" src="assets/images/Logos4.jpg"/>
-                <img class="logos_img" src="assets/images/Logos5.jpg"/>
-                <img class="logos_img" src="assets/images/Logos6.jpg"/>
+                <img class="logos_img" src="images/Logos1.jpg"/>
+                <img class="logos_img" src="images/Logos2.jpg"/>
+                <img class="logos_img" src="images/Logos3.jpg"/>
+                <img class="logos_img" src="images/Logos4.jpg"/>
+                <img class="logos_img" src="images/Logos5.jpg"/>
+                <img class="logos_img" src="images/Logos6.jpg"/>
             </div>
         </div>
     </div>
@@ -454,17 +488,17 @@
 <div class="images_pazzle">
         <div class="images_pazzle_column">
             <div class="images_pazzle_item">
-                <img class="image_pazzle" src="assets/images/images-pazzle1.jpg"/>
+                <img class="image_pazzle" src="images/images-pazzle1.jpg"/>
                 <p class="image_pazzle_text">
-                    <img src="assets/images/PICTURE-white.png"/>
+                    <img src="images/PICTURE-white.png"/>
                     <b>creatively designed</b>
                     <i>Lorem ipsum dolor sit</i>
                 </p>
             </div>
             <div class="images_pazzle_item">
-                <img class="image_pazzle" src="assets/images/images-pazzle2.jpg"/>
+                <img class="image_pazzle" src="images/images-pazzle2.jpg"/>
                 <p class="image_pazzle_text">
-                    <img src="assets/images/PICTURE-white.png"/>
+                    <img src="images/PICTURE-white.png"/>
                     <b>creatively designed</b>
                     <i>Lorem ipsum dolor sit</i>
                 </p>
@@ -472,27 +506,27 @@
         </div>
         <div class="images_pazzle_column">
             <div class="images_pazzle_item">
-                <img class="image_pazzle" src="assets/images/images-pazzle3.jpg"/>
+                <img class="image_pazzle" src="images/images-pazzle3.jpg"/>
                 <p class="image_pazzle_text">
-                    <img src="assets/images/PICTURE-white.png"/>
+                    <img src="images/PICTURE-white.png"/>
                     <b>creatively designed</b>
                     <i>Lorem ipsum dolor sit</i>
                 </p>
             </div>
             <div class="images_pazzle_item">
-                <img class="image_pazzle" src="assets/images/images-pazzle4.jpg"/>
+                <img class="image_pazzle" src="images/images-pazzle4.jpg"/>
                 <p class="image_pazzle_text">
-                    <img src="assets/images/PICTURE-white.png"/>
+                    <img src="images/PICTURE-white.png"/>
                     <b>creatively designed</b>
                     <i>Lorem ipsum dolor sit</i>
                 </p>
             </div>
         </div>
         <div class="images_pazzle_column">
-            <div class="images_pazzle_item tall">
-                <img class="image_pazzle" src="assets/images/images-pazzle5.jpg"/>
+            <div class="images_pazzle_item">
+                <img class="image_pazzle" src="images/images-pazzle5.jpg"/>
                 <p class="image_pazzle_text tall">
-                    <img src="assets/images/PICTURE-white.png"/>
+                    <img src="images/PICTURE-white.png"/>
                     <b>creatively designed</b>
                     <i>Lorem ipsum dolor sit</i>
                 </p>
@@ -500,17 +534,17 @@
         </div>
         <div class="images_pazzle_column">
             <div class="images_pazzle_item">
-                <img class="image_pazzle" src="assets/images/images-pazzle6.jpg"/>
+                <img class="image_pazzle" src="images/images-pazzle6.jpg"/>
                 <p class="image_pazzle_text">
-                    <img src="assets/images/PICTURE-white.png"/>
+                    <img src="images/PICTURE-white.png"/>
                     <b>creatively designed</b>
                     <i>Lorem ipsum dolor sit</i>
                 </p>
             </div>
             <div class="images_pazzle_item">
-                <img class="image_pazzle" src="assets/images/images-pazzle7.jpg"/>
+                <img class="image_pazzle" src="images/images-pazzle7.jpg"/>
                 <p class="image_pazzle_text">
-                    <img src="assets/images/PICTURE-white.png"/>
+                    <img src="images/PICTURE-white.png"/>
                     <b>creatively designed</b>
                     <i>Lorem ipsum dolor sit</i>
                 </p>
@@ -521,7 +555,7 @@
 <section class="reviews second">
     <div class="container">
         <div class="reviews_main">
-            <img id="arrow_prev" src="assets/images/ARROW_DOWN.png" onclick="minusSlide(2)"/>
+            <img id="arrow_prev" src="images/ARROW_DOWN.png" onclick="minusSlide(2)"/>
 
             <div class="slider">
                 <div id="slides2" class="slides">
@@ -529,7 +563,7 @@
                     <div class="slide_wrapper second">
                         <div class="slide">
                             <div class="review_photo second">
-                                <img src="assets/images/Review_photo1.png"/>
+                                <img src="images/Review_photo1.png"/>
                             </div>
                             <div class="review_text second">
                                 <p class="quote"> <q>111 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</q></p>
@@ -541,7 +575,7 @@
                     <div class="slide_wrapper second">
                         <div class="slide">
                             <div class="review_photo second">
-                                <img src="assets/images/Review_photo1.png"/>
+                                <img src="images/Review_photo1.png"/>
                             </div>
                             <div class="review_text second">
                                 <p class="quote"> <q>222 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</q></p>
@@ -554,7 +588,7 @@
                     <div class="slide_wrapper second">
                         <div class="slide">
                             <div class="review_photo second">
-                                <img src="assets/images/Review_photo1.png"/>
+                                <img src="images/Review_photo1.png"/>
                             </div>
                             <div class="review_text second">
                                 <p class="quote"> <q>333 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</q></p>
@@ -566,7 +600,7 @@
                     <div class="slide_wrapper second">
                         <div class="slide">
                             <div class="review_photo second">
-                                <img src="assets/images/Review_photo1.png"/>
+                                <img src="images/Review_photo1.png"/>
                             </div>
                             <div class="review_text second">
                                 <p class="quote"> <q>444 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</q></p>
@@ -578,7 +612,7 @@
                     <div class="slide_wrapper second">
                         <div class="slide">
                             <div class="review_photo second">
-                                <img src="assets/images/Review_photo1.png"/>
+                                <img src="images/Review_photo1.png"/>
                             </div>
                             <div class="review_text second">
                                 <p class="quote"> <q>555 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</q></p>
@@ -590,7 +624,7 @@
                 </div>
             </div>
 
-            <img id="arrow_next" src="assets/images/ARROW_DOWN.png" onclick="plusSlide(2)"/>
+            <img id="arrow_next" src="images/ARROW_DOWN.png" onclick="plusSlide(2)"/>
         </div>
     </div>
 </section>
@@ -605,7 +639,7 @@
     <div class="people_say_table">
 
         <div class="people_say_block">
-            <img class="people_say_photo" src="assets/images/people1.png"/>
+            <img class="people_say_photo" src="images/people1.png"/>
                 <div>
                     <p class="people_say_header"><b>Matthew Dix</b></p>
                     <p class="people_say_subheader"><i>Graphic Design</i></p>
@@ -615,7 +649,7 @@
         </div>
 
         <div class="people_say_block">
-            <img class="people_say_photo" src="assets/images/people2.png"/>
+            <img class="people_say_photo" src="images/people2.png"/>
                 <div>
                     <p class="people_say_header"><b>Nick Karvounis</b></p>
                     <p class="people_say_subheader"><i>Graphic Design</i></p>
@@ -625,7 +659,7 @@
         </div>
         
         <div class="people_say_block">
-            <img class="people_say_photo" src="assets/images/people3.png"/>
+            <img class="people_say_photo" src="images/people3.png"/>
                 <div>
                     <p class="people_say_header"><b>Jaelynn Castillo</b></p>
                     <p class="people_say_subheader"><i>Graphic Design</i></p>
@@ -635,7 +669,7 @@
         </div>
 
         <div class="people_say_block">
-            <img class="people_say_photo" src="assets/images/people4.png"/>
+            <img class="people_say_photo" src="images/people4.png"/>
                 <div>
                     <p class="people_say_header"><b>Mike Petrucci</b></p>
                     <p class="people_say_subheader"><i>Graphic Design</i></p>
@@ -657,7 +691,7 @@
         <div class="blogs">
             <div class="blog_item">
                 <div class="blog_image">
-                    <img src="assets/images/blog1.jpg"/>
+                    <img src="images/blog1.jpg"/>
                     <div class="blog_data">
                         <p class="blog_day">15</p>
                         <p class="blog_month">Jan</p>
@@ -670,16 +704,16 @@
                     <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div class="blog_icons">
-                    <img src="assets/images/VIEW.png"/>
+                    <img src="images/VIEW.png"/>
                     <p class="score">542</p>
-                    <img src="assets/images/SPEECH_BUBBLE_2.png"/>
+                    <img src="images/SPEECH_BUBBLE_2.png"/>
                     <p class="score">17</p>
                 </div>
             </div>
 
             <div class="blog_item">
                 <div class="blog_image">
-                    <img src="assets/images/blog2.jpg"/>
+                    <img src="images/blog2.jpg"/>
                     <div class="blog_data">
                         <p class="blog_day">14</p>
                         <p class="blog_month">Jan</p>
@@ -692,16 +726,16 @@
                     <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div class="blog_icons">
-                    <img src="assets/images/VIEW.png"/>
+                    <img src="images/VIEW.png"/>
                     <p class="score">992</p>
-                    <img src="assets/images/SPEECH_BUBBLE_2.png"/>
+                    <img src="images/SPEECH_BUBBLE_2.png"/>
                     <p class="score">42</p>
                 </div>
             </div>
 
             <div class="blog_item">
                 <div class="blog_image">
-                    <img src="assets/images/blog3.jpg"/>
+                    <img src="images/blog3.jpg"/>
                     <div class="blog_data">
                         <p class="blog_day">12</p>
                         <p class="blog_month">Jan</p>
@@ -714,9 +748,9 @@
                     <p>Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div class="blog_icons">
-                    <img src="assets/images/VIEW.png"/>
+                    <img src="images/VIEW.png"/>
                     <p class="score">1560</p>
-                    <img src="assets/images/SPEECH_BUBBLE_2.png"/>
+                    <img src="images/SPEECH_BUBBLE_2.png"/>
                     <p class="score">98</p>
                 </div>
             </div>
@@ -726,7 +760,7 @@
 </section>
 
 <div class="map"> 
-<img class="map_icon" src="assets/images/PIN_2.png"/>
+<img class="map_icon" src="images/PIN_2.png"/>
     <a class="map_text" href="https://www.google.com/maps/place/%D0%BF%D0%BB.+%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0+%D0%92.%D0%98.,+%D0%90%D1%80%D1%85%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%BA,+%D0%90%D1%80%D1%85%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB./@64.5404039,40.512951,17z/data=!3m1!4b1!4m5!3m4!1s0x44183686f3060255:0xffdd7d627c3c432a!8m2!3d64.5404039!4d40.5151397?hl=ru-RU" target="_blank">Open map</a>
 </div>
 
@@ -746,14 +780,14 @@
                 </div>
                 <div class="mogo_follow_us">
                     <p id="contact" class="mogo_follow_text"> <i>Follow Us:</i></p>
-                    <a href="https://www.facebook.com"><img src="assets/images/mogo_icon1.png"/></a>
-                    <a href="https://twitter.com"><img src="assets/images/mogo_icon2.png"/></a>
-                    <a href="https://www.instagram.com"><img src="assets/images/mogo_icon3.png"/></a>
-                    <a href="https://www.pinterest.ru"><img src="assets/images/mogo_icon4.png"/></a>
+                    <a href="https://www.facebook.com"><img src="images/mogo_icon1.png"/></a>
+                    <a href="https://twitter.com"><img src="images/mogo_icon2.png"/></a>
+                    <a href="https://www.instagram.com"><img src="images/mogo_icon3.png"/></a>
+                    <a href="https://www.pinterest.ru"><img src="images/mogo_icon4.png"/></a>
                     
-                    <a href="https://www.youtube.com"><img src="assets/images/mogo_icon6.png"/></a>
-                    <a href="https://dribbble.com"><img src="assets/images/mogo_icon7.png"/></a>
-                    <a href="https://www.tumblr.com"><img src="assets/images/mogo_icon8.png"/></a>
+                    <a href="https://www.youtube.com"><img src="images/mogo_icon6.png"/></a>
+                    <a href="https://dribbble.com"><img src="images/mogo_icon7.png"/></a>
+                    <a href="https://www.tumblr.com"><img src="images/mogo_icon8.png"/></a>
                 </div>
                 <form class="mogo_mail">
                     <input class="mogo_mail_field" type="email" name="email" placeholder="Your Email..."/>
@@ -767,7 +801,7 @@
                 </div>
                 <div class="blogs_block">
                     <div class="blogs_photo">
-                       <img src="assets/images/blogs1.jpg"/> 
+                       <img src="images/blogs1.jpg"/> 
                     </div>
                     <div class="blogs_text">
                         <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></p>
@@ -776,7 +810,7 @@
                 </div>
                 <div class="blogs_block">
                     <div class="blogs_photo">
-                        <img src="assets/images/blogs2.jpg"/> 
+                        <img src="images/blogs2.jpg"/> 
                     </div>
                     <div class="blogs_text">
                         <p><a href="#">Consectetur adipiscing elit, sed do eiusmod tempor</a></p>
@@ -785,7 +819,7 @@
                 </div>
                 <div class="blogs_block">
                     <div class="blogs_photo">
-                        <img src="assets/images/blogs3.jpg"/> 
+                        <img src="images/blogs3.jpg"/> 
                     </div>
                     <div class="blogs_text">
                         <p><a href="#">sed do eiusmod tempor incididunt ut labore</a></p>
@@ -800,31 +834,31 @@
                 </div>
                 <div class="instagram_block">
                     <div class="instagram_photo">
-                       <img src="assets/images/instagram1.jpg"/> 
+                       <img src="images/instagram1.jpg"/> 
                     </div>
                     <div class="instagram_photo">
-                       <img src="assets/images/instagram2.jpg"/>  
+                       <img src="images/instagram2.jpg"/>  
                     </div> 
                     <div class="instagram_photo">
-                       <img src="assets/images/instagram3.jpg"/> 
+                       <img src="images/instagram3.jpg"/> 
                     </div>
                     <div class="instagram_photo">
-                       <img src="assets/images/instagram4.jpg"/> 
+                       <img src="images/instagram4.jpg"/> 
                     </div>
                     <div class="instagram_photo">
-                       <img src="assets/images/instagram5.jpg"/> 
+                       <img src="images/instagram5.jpg"/> 
                     </div>
                     <div class="instagram_photo">
-                       <img src="assets/images/instagram6.jpg"/> 
+                       <img src="images/instagram6.jpg"/> 
                     </div>
                     <div class="instagram_photo">
-                       <img src="assets/images/instagram7.jpg"/> 
+                       <img src="images/instagram7.jpg"/> 
                     </div>
                     <div class="instagram_photo">
-                       <img src="assets/images/instagram8.jpg"/> 
+                       <img src="images/instagram8.jpg"/> 
                     </div>
                     <div class="instagram_photo">
-                       <img src="assets/images/instagram9.jpg"/> 
+                       <img src="images/instagram9.jpg"/> 
                     </div>
                 </div>
                 <div class="instagram_link">
@@ -845,3 +879,6 @@
   <script src="script.js"></script>  
 </body>
 </html>
+
+
+

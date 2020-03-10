@@ -4,7 +4,6 @@ body {
     font-size: 15px;
     line-height: 1.6;
     color: #999999;
-    background-color: rgb(113, 98, 250);
 }
 
 *,
@@ -1572,11 +1571,11 @@ h1, h2, h3, h4, h5, h6 {
         left: 15%;
     }
     #arrow_prev {
-        transform: rotate(-90deg) scale(2.5);
+        transform: rotate(-90deg) scale(2);
     }
     
     #arrow_next {
-        transform: rotate(90deg)  scale(2.5);
+        transform: rotate(90deg)  scale(2);
     }
     .autor {
         position: absolute;

@@ -1632,12 +1632,7 @@ h1, h2, h3, h4, h5, h6 {
     .image_pazzle_text img {
         transform: scale(0.7);
     }
-    .mogo_mail_field {
-        width: 60%;
-    }
-    .mogo_mail_botton {
-        width: 40%;
-    }
+
     .fotter_block.mogo {
         width: 48%;
     }
@@ -1681,6 +1676,12 @@ h1, h2, h3, h4, h5, h6 {
     }
     .blog_item {
         width: 80%;
+    }
+    .mogo_mail_field {
+        width: 60%;
+    }
+    .mogo_mail_botton {
+        width: 40%;
     }
 }
 

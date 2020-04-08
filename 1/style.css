@@ -285,16 +285,17 @@ h1, h2, h3, h4, h5, h6 {
 .intro {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     height: 100vh;
     background: url("images/intro.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+    border: 3px solid #333;
 }
 
 .intro_inner {
-    margin: 0 auto;
+    margin: 25% auto 0;
     text-align: center;
 }
 
@@ -358,9 +359,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Slider */
 .header_slider {
     width: 100%;
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    left: 0;
+    left: 0; */
+    border: 3px solid blue;
 }
 
 .slider_inner {

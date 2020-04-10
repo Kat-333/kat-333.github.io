@@ -300,6 +300,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-background-size: cover;
     background-size: cover;
     border: 3px solid #333;
+    position: relative;
 }
 
 .intro_inner {

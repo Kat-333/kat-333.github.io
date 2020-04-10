@@ -1,3 +1,13 @@
+function getvh () {
+	let vh = window.innerHeight;
+	console.log (vh)
+	let block = document.getElementById("vh100");
+	block.style.height = vh + "px" ;
+}
+getvh();
+window.addEventListener ( "resize", getvh());
+
+
 /* аккордион */
 var acc1 = document.getElementById("1");
 var arrow1 = document.getElementById("arrow1");

@@ -1,11 +1,16 @@
-function getvh () {
+/* function getvh () {
 	let vh = window.innerHeight;
 	console.log (vh)
 	let block = document.getElementById("vh100");
 	block.style.height = vh + "px" ;
+
+	let testblock = document.getElementById("testvh");
+	let testheight = getComputedStyle(testblock);
+	console.log (testheight.height);
+
 }
 getvh();
-window.addEventListener ( "resize", getvh());
+window.addEventListener ( "resize", getvh()); */
 
 
 /* аккордион */

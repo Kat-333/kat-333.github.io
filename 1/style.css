@@ -1747,6 +1747,9 @@ h1, h2, h3, h4, h5, h6 {
     .fotter_block.instagram {
         display: none;
     }
+    .header_slider {
+        display: none;
+    }
 }
 
 

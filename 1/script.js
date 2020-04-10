@@ -1,17 +1,4 @@
-/* function getvh () {
-	let vh = window.innerHeight;
-	console.log (vh)
-	let block = document.getElementById("vh100");
-	block.style.height = vh + "px" ;
-
-	let testblock = document.getElementById("testvh");
-	let testheight = getComputedStyle(testblock);
-	console.log (testheight.height);
-
-}
-getvh();
-window.addEventListener ( "resize", getvh()); */
-
+/* aeyrwbz для расчета высоты равной 100vh на мобильных устройтсвах(без учета строки адреса)*/
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty("--vh", `${vh}px`);
 window.addEventListener("resize", () => {

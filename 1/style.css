@@ -294,7 +294,6 @@ h1, h2, h3, h4, h5, h6 {
     background: url("images/intro.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    border: 3px solid #333;
     position: relative;
 }
 
@@ -366,7 +365,6 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     bottom: 0;
     left: 0;
-    border: 3px solid blue;
 }
 
 .slider_inner {
@@ -800,7 +798,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .slide {
     width: 900px;
-    height: 500px;
+    height: 300px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -973,7 +971,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logos_img {
-    max-width: 100%;
+    max-width: 150px;
     height: auto;
 }
 
@@ -1607,7 +1605,6 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    
     .logos_img {
         flex-basis: 140px;
     }
@@ -1695,6 +1692,9 @@ h1, h2, h3, h4, h5, h6 {
     .mogo_mail_botton {
         width: 40%;
     }
+    .mogo_follow_us a img {
+        width: 130%;
+    }
 }
 
 @media (max-width: 992px) and (min-width: 767px) {
@@ -1769,6 +1769,78 @@ h1, h2, h3, h4, h5, h6 {
         transform: rotate(90deg)  scale(1);
     }
 }
+
+
+.open_modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background: linear-gradient(to bottom, #e3887e, #fce38a);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.open_modal_img1 {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border: 10px solid white;
+} 
+
+.close {
+    width: 40px;
+    height: 40px;
+    margin-left: calc(var(--modalImgWidth));
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+.close img {
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+/* .close::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333333;
+    border-radius: 20%;
+    rotate: 45deg;
+    position: relative;
+    top: 8px;
+    left: -5px;
+}
+.close::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333333;
+    border-radius: 20%;
+    rotate: -45deg;
+    position: relative;
+    top: 4px;
+    left: -5px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

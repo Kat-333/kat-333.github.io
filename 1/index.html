@@ -104,16 +104,16 @@
         
         <div class="imgs1">
 
-            <div class="imgs1_block">
-                <a href="#open_modal"><img class="img1" src="images/table0.jpg"/></a>
-                <div id="open_modal" class="modal_dialog">
-                    <a href="#close" title="Закрыть" class="close"></a>
-                    <img class="img1" src="images/table0.jpg"/>
-                </div>
+            <div class="imgs1_block" onclick='modalOpen ("modal_1")'>
+                <img class="img1" src="images/table0.jpg"/>
                 <div class="img1_text"> 
                     <img src="images/USERS.png"/>
                     <span>Super team</span>
                 </div>
+            </div>
+            <div id="modal_1" class="open_modal">
+                <img src="images/крестик.png" title="Закрыть" class="close" onclick='modalClose("modal_1")'/>
+                <img id="modal_1_img" class="open_modal_img1" src="images/table0.jpg"/>
             </div>
 
             <div class="imgs1_block">
@@ -464,18 +464,18 @@
     </div>
 </section>
 
-    <div class="logos_bar">
-        <div class="container">
-            <div class="logos">
-                <img class="logos_img" src="images/Logos1.jpg"/>
-                <img class="logos_img" src="images/Logos2.jpg"/>
-                <img class="logos_img" src="images/Logos3.jpg"/>
-                <img class="logos_img" src="images/Logos4.jpg"/>
-                <img class="logos_img" src="images/Logos5.jpg"/>
-                <img class="logos_img" src="images/Logos6.jpg"/>
-            </div>
+<div class="logos_bar">
+    <div class="container">
+        <div class="logos">
+            <img class="logos_img" src="images/Logos1.jpg"/>
+            <img class="logos_img" src="images/Logos2.jpg"/>
+            <img class="logos_img" src="images/Logos3.jpg"/>
+            <img class="logos_img" src="images/Logos4.jpg"/>
+            <img class="logos_img" src="images/Logos5.jpg"/>
+            <img class="logos_img" src="images/Logos6.jpg"/>
         </div>
     </div>
+</div>
 
 <section class="section our work">
     <div class="container">

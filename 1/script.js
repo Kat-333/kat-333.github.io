@@ -1,4 +1,4 @@
-/* aeyrwbz для расчета высоты равной 100vh на мобильных устройтсвах(без учета строки адреса)*/
+/* функция для расчета высоты равной 100vh на мобильных устройтсвах(без учета строки адреса)*/
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty("--vh", `${vh}px`);
 window.addEventListener("resize", () => {
@@ -257,3 +257,29 @@ function minusSlide(n) {
 		offset2 = offset;
 	}
 }
+
+
+/* для модальных окон */
+
+function modalOpen (window) {
+	let id = window
+	let open = document.getElementById(id);
+	console.log(open);
+	open.style.display = "flex";
+	let modalImg = document.getElementById(id + "_img");
+	console.log(modalImg);
+	let modalImgWidth = getComputedStyle(modalImg);
+	console.log(modalImgWidth)
+	modalImgWidth = parseInt(modalImgWidth.width);
+	document.documentElement.style.setProperty("--modalImgWidth", `${modalImgWidth}px`);
+}
+
+function modalClose (window) {
+	let id = window
+	let close = document.getElementById(id);
+	close.style.display = "none";
+}
+
+
+
+

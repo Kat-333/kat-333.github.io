@@ -289,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     background: url("images/intro.jpg") center no-repeat;
     -webkit-background-size: cover;
@@ -1779,25 +1779,27 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     padding: 30px;
-    background: linear-gradient(to bottom, #e3887e, #fce38a);
+    background: linear-gradient(to bottom, rgba(227, 136, 126, 0.9), rgba(252, 227, 138, 0.9));
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1001;
 }
 
-.open_modal_img1 {
+.open_modal_img {
     width: auto;
     max-width: 100%;
     height: auto;
+    max-height: 100%;
     border: 10px solid white;
+    box-shadow: 3px 3px 5px #333333;
 } 
 
 .close {
     width: 40px;
     height: 40px;
     margin-left: calc(var(--modalImgWidth));
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     cursor: pointer;
 }
 .close img {

@@ -266,12 +266,16 @@ function modalOpen (window) {
 	let open = document.getElementById(id);
 	console.log(open);
 	open.style.display = "flex";
+
 	let modalImg = document.getElementById(id + "_img");
 	console.log(modalImg);
 	let modalImgWidth = getComputedStyle(modalImg);
 	console.log(modalImgWidth)
 	modalImgWidth = parseInt(modalImgWidth.width);
 	document.documentElement.style.setProperty("--modalImgWidth", `${modalImgWidth}px`);
+	
+/* 	let test = open.getBoundingClientRect();
+	console.log(test); */
 }
 
 function modalClose (window) {

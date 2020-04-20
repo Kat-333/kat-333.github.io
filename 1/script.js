@@ -267,10 +267,10 @@ slide_block1.addEventListener("touchstart", function(e) {
  slide_block1.addEventListener('touchend', function(e) {	
 	xTouchFinish = parseInt(e.changedTouches[0].clientX);
 	/* console.log(xTouchFinish); */ 
-	if ((xTouchStart - xTouchFinish) > 2000) {
+	if ((xTouchStart - xTouchFinish) > 200) {
 		minusSlide(1);
 	}
-	else if ((xTouchStart - xTouchFinish) < -2000) {
+	else if ((xTouchStart - xTouchFinish) < -200) {
 		plusSlide(1);
 	}
 	/* xTouchStart = 0; 
@@ -284,10 +284,10 @@ slide_block1.addEventListener("touchstart", function(e) {
  slide_block2.addEventListener('touchend', function(e) {	
 	xTouchFinish = parseInt(e.changedTouches[0].clientX);
 	/* console.log(xTouchFinish); */
-	if ((xTouchStart - xTouchFinish) > 500) {
+	if ((xTouchStart - xTouchFinish) > 100) {
 		minusSlide(2);
 	}
-	else if ((xTouchStart - xTouchFinish) < -500) {
+	else if ((xTouchStart - xTouchFinish) < -100) {
 		plusSlide(2);
 	}
 	/* xTouchStart = 0; 

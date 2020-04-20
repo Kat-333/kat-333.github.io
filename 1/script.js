@@ -267,10 +267,10 @@ slide_block1.addEventListener("touchstart", function(e) {
  slide_block1.addEventListener('touchend', function(e) {	
 	xTouchFinish = parseInt(e.changedTouches[0].clientX);
 	/* console.log(xTouchFinish); */ 
-	if ((xTouchStart - xTouchFinish) > 300) {
+	if ((xTouchStart - xTouchFinish) > 2000) {
 		minusSlide(1);
 	}
-	else if ((xTouchStart - xTouchFinish) < -300) {
+	else if ((xTouchStart - xTouchFinish) < -2000) {
 		plusSlide(1);
 	}
 	/* xTouchStart = 0; 

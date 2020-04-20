@@ -224,9 +224,9 @@ function minusSlide(n) {
 
 	if (offset > 0) {
 		slide_block.style.transition = "1.5s";
-		console.log("offset1", offset);
+		/* console.log("offset1", offset); */
 		offset -= width;
-		console.log("offset2", offset);
+		/* console.log("offset2", offset); */
 		slide_block.style.transform = "translate3d(-" + offset + "px, 0px, 0px)";
 	}
 	else {
@@ -235,14 +235,14 @@ function minusSlide(n) {
 			buf = elm.cloneNode(true);
 			slide_block.style.transition = "0s";
 			slide_block.insertBefore(buf, slide_block.firstElementChild);
-			console.log("slide_block", slide_block);
-			console.log("offset3", offset);
+			/* console.log("slide_block", slide_block);
+			console.log("offset3", offset); */
 			offset += width;
-			console.log("offset4", offset);
+			/* console.log("offset4", offset); */
 			slide_block.style.transform = "translate3d(-" + offset + "px, 0px, 0px)";
-			console.log("offset5", offset);
+			/* console.log("offset5", offset); */
 			offset -= width;
-			console.log("offset6", offset);
+			/* console.log("offset6", offset); */
 			setTimeout(function() {
 				slide_block.style.transition = "1.5s";
 				slide_block.style.transform = "translate3d(-" + offset + "px, 0px, 0px)";
@@ -257,6 +257,46 @@ function minusSlide(n) {
 		offset2 = offset;
 	}
 }
+
+/* Сенсорное управление слайдерами */
+let xTouchStart, xTouchFinish;
+slide_block1.addEventListener("touchstart", function(e) {
+	xTouchStart = parseInt(e.touches[0].clientX);
+	/* console.log(xTouchStart); */
+}, false);
+ slide_block1.addEventListener('touchend', function(e) {	
+	xTouchFinish = parseInt(e.changedTouches[0].clientX);
+	/* console.log(xTouchFinish); */ 
+	if (xTouchStart < xTouchFinish) {
+		minusSlide(1);
+	}
+	else if (xTouchStart > xTouchFinish) {
+		plusSlide(1);
+	}
+	/* xTouchStart = 0; 
+	xTouchFinish = 0; */
+ }, false);
+
+ slide_block2.addEventListener("touchstart", function(e) {
+	xTouchStart = parseInt(e.touches[0].clientX);
+	/* console.log(xTouchStart); */
+}, false);
+ slide_block2.addEventListener('touchend', function(e) {	
+	xTouchFinish = parseInt(e.changedTouches[0].clientX);
+	/* console.log(xTouchFinish); */
+	if (xTouchStart < xTouchFinish) {
+		minusSlide(2);
+	}
+	else if (xTouchStart > xTouchFinish) {
+		plusSlide(2);
+	}
+	/* xTouchStart = 0; 
+	xTouchFinish = 0; */
+ }, false);
+
+
+
+
 
 
 /* для модальных окон */
@@ -283,6 +323,8 @@ function modalClose (window) {
 	let close = document.getElementById(id);
 	close.style.display = "none";
 }
+
+
 
 
 
